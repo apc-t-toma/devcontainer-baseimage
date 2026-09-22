@@ -10,8 +10,7 @@ echo "🚀 === GitHub CLI セットアップ開始 ==="
 # 必要なパッケージのインストール
 echo "必要なパッケージをインストール中..."
 sudo apt-get install -qq -y \
-  wget \
-  curl
+  wget
 
 # GitHub CLI のインストール（公式手順準拠）
 # https://github.com/cli/cli/blob/trunk/docs/install_linux.md
