@@ -30,7 +30,6 @@ if [ -d "/tmp/import/.ssh" ] && [ "$(find /tmp/import/.ssh -type f -name 'id_*' 
 
   echo "✅ ホストSSHキーのコピーが完了しました"
 else
-  echo "SSHキーを生成中..."
   echo "SSHキー用メール: $GIT_USER_EMAIL"
   echo "SSHキーを生成中..."
   ssh-keygen -t ed25519 -C "$GIT_USER_EMAIL" -f ~/.ssh/id_ed25519 -N "" -q
