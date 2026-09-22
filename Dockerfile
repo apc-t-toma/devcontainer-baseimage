@@ -86,6 +86,9 @@ bash /tmp/scripts/validate-args.sh
 echo -e "\n\033[1;46;30m▓▓▓ 各種ツールのインストールと設定 ▓▓▓\033[0m\n"
 # 以降のインストールは、コメントアウトやスクリプトの追加・変更など、必要に応じてカスタマイズしてください。
 
+# ripgrepのインストール
+bash /tmp/scripts/install-ripgrep.sh
+
 # vim のインストール
 bash /tmp/scripts/install-vim.sh
 

@@ -5,7 +5,7 @@
 
 ## 特徴
 
-- **基本ツールの自動セットアップ**: Git、SSH、GPG、GitHub CLI、Docker、vim のインストールと設定を自動化
+- **基本ツールの自動セットアップ**: Git、SSH、GPG、GitHub CLI、Docker、vim、ripgrep のインストールと設定を自動化
 - **認証ファイル管理**: ホストとコンテナ間で Git 設定、SSH 鍵、GPG 鍵のインポート/エクスポートが可能
 - **ベースイメージとして設計**: プロジェクト固有のツールは派生イメージで追加する拡張可能な構成
 - **開発環境サンプル提供**: Python 開発環境、Node.js 開発環境（VS Code Dev Container）の実装例を同梱
@@ -163,6 +163,7 @@ gpg --import-ownertrust export/.gnupg/ownertrust-*.txt
 
 ### インストール済みツール一覧
 
+- **ripgrep** - 高速な検索ツール（`rg` コマンド）
 - **vim** - テキストエディタ
 - **SSH** - OpenSSH クライアント、鍵生成/インポート機能
 - **GPG** - GnuPG、鍵生成/インポート機能
