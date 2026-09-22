@@ -19,6 +19,7 @@ sudo apt-get remove -qq -y \
   runc \
   2>/dev/null || true
 
+# https://docs.docker.com/engine/install/ubuntu/#uninstall-docker-engine
 sudo rm -rf /var/lib/docker
 sudo rm -rf /var/lib/containerd
 
@@ -43,6 +44,7 @@ Types: deb
 URIs: https://download.docker.com/linux/ubuntu
 Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
 Components: stable
+Architectures: $(dpkg --print-architecture)
 Signed-By: /etc/apt/keyrings/docker.asc
 EOF
 
