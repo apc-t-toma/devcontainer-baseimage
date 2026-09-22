@@ -11,7 +11,6 @@ echo "🚀 === Git セットアップ開始 ==="
 echo "必要なパッケージをインストール中..."
 sudo apt-get install -qq -y \
   git \
-  git-lfs \
   gnupg \
   rsync
 
@@ -52,9 +51,5 @@ else
 
   echo "✅ Git セットアップが完了しました"
 fi
-
-# git-lfsのインストール（共通処理）
-echo "Git LFS を初期化中..."
-git lfs install
 
 echo "🎉 === Git セットアップ完了 ==="
