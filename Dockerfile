@@ -4,7 +4,7 @@
 # Stage 1: base
 # 共通基盤（sudo インストール、タイムゾーン・ロケール設定）
 # ============================================
-FROM ubuntu:24.04 AS base
+FROM ubuntu:resolute-20260912 AS base
 
 ENV TZ=Asia/Tokyo
 
